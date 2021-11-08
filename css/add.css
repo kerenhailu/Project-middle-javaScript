@@ -1,0 +1,88 @@
+body{
+    font-family: 'Mochiy Pop One', sans-serif;
+    /* background-color: rgb(7, 5, 8); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-image: url("../img/back\ img.jpg");
+}
+ul {    
+    text-align: center;
+    list-style-type: none;
+     display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin: 2%;
+   padding: 20px;
+   justify-content: space-between;
+    margin: 1%;
+}
+ nav {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    box-shadow: 5px 5px 5px #2b2c2a;
+    background: linear-gradient(#0e0d0d,#2b2c2a);
+    border-radius: 3%;      
+}
+nav a{ 
+    text-decoration: none; 
+    color: rgb(233, 227, 227);
+    font-size: 20px;
+}
+nav a:hover{
+ color: rgb(236, 120, 11);
+}
+#form{
+    padding: 2%;
+    margin: 4%;
+    background-color: rgba(233, 225, 217, 0.281);
+    box-shadow: 8px 8px 8px rgba(235, 34, 19, 0.473);
+    margin-left: 35%;
+    border-radius: 10%;
+    width: 50vh;
+}
+#centralTitle{
+    color:black;
+    font-size:30px;
+    text-shadow: 3px 3px 3px rgba(68, 64, 64, 0.473);
+}
+#btnAdd{
+    background-color: rgba(0, 0, 0, 0.603);
+    color: red;
+    height: 40px;
+    width: 90px;
+    border-radius: 10%;
+    font-weight: bold;
+    transition: 2s;
+}
+#btnAdd:hover{
+    height: 43px;
+    width: 93px;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+label{
+    color: white;
+    font-size: 20px;
+}
+footer{
+    background: linear-gradient(#0e0d0da6,#2b2c2a9f);
+    text-align: center;
+    color: white;
+    padding: 1%;
+    margin: 1%;
+}
+
+footer a{
+    text-decoration: none; 
+   color: rgb(233, 227, 227);
+    font-size: 20px;
+}
+#titelFooter{
+    color: red
+}
+.imgContact{
+    margin: 0.5%;
+    width: 45px;
+    height: 45px;
+}

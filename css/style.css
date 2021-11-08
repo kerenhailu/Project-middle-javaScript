@@ -1,0 +1,74 @@
+body{
+    font-family: 'Mochiy Pop One', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-image: url("../img/bg\ add.jpg");
+}
+ul {    
+    text-align: center;
+    list-style-type: none;
+     display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin: 2%;
+   padding: 20px;
+   justify-content: space-between;
+    margin: 1%
+}
+ul a{
+   text-decoration: none; 
+   color: rgb(233, 227, 227);
+    font-size: 20px;
+}
+ nav {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    box-shadow: 5px 5px 5px #2b2c2a;
+    background: linear-gradient(#0e0d0d,#2b2c2a);
+    border-radius: 3%;      
+}
+nav a:hover{
+ color: rgb(236, 120, 11);
+}
+#imgCenter{
+    width: 98vh;
+    height: 40vh
+}
+#textMovieSec{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin: 2%; 
+    width: 90%; 
+    padding: 20px;
+    justify-content: space-between;
+}
+.text{
+    width: 32%;
+    height: 80px;
+    background-color: rgba(248, 232, 232, 0.192);
+}
+footer{
+    background: linear-gradient(#0e0d0da6,#2b2c2a9f);
+    text-align: center;
+    color: white;
+    padding: 1%;
+    margin: 1%;
+}
+#titelFooter{
+    color: red
+}
+footer a{
+    text-decoration: none; 
+   color: rgb(233, 227, 227);
+    font-size: 20px;
+}
+.imgContact{
+    margin: 0.5%;
+    width: 45px;
+    height: 45px;
+    transition: 2S;
+}
+
