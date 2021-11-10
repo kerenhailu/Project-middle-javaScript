@@ -34,7 +34,7 @@ btnAdd.onclick = () => {
   const option = {
     method: `POST`,
     body: JSON.stringify(newMovie),
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json"},
   };
   console.log(option.body);
   inputReturn(`https://moviesmern.herokuapp.com/movies/saveMovie`, option);

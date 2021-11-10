@@ -42,6 +42,27 @@ nav a:hover{
     width: 98vh;
     height: 40vh
 }
+/* header{
+    display: flex;
+  
+} */
+#imgYakov{
+margin-left: 90%;
+width: 80px;
+height: 50px;
+margin-bottom: -50px;
+margin-top: -20px;
+border-radius: 10px;
+
+} 
+ #imgTech{
+    margin-right: 90%;
+    width: 80px;
+height: 50px;
+margin-top: -10px;
+border-radius: 10px;
+}
+
 #textMovieSec{
     display: flex;
     flex-direction: row;
@@ -52,14 +73,26 @@ nav a:hover{
     justify-content: space-between;
 }
 .text{
+    box-shadow: 5px 5px 5px #2b2c2a;
+    text-shadow: 2px 2px 2px rgb(133, 123, 123);
     width: 32%;
     height: 80px;
-    background-color: rgba(248, 232, 232, 0.192);
+    font-size: 20px;
+    background-color: rgba(248, 247, 232, 0.192);
+    border-radius: 10px;
+}
+.text a{
+    color: black;
+   text-decoration: none; 
+   transition: 1s;
+}
+.text a:hover{
+    font-size: 23px;
 }
 footer{
     background: linear-gradient(#0e0d0da6,#2b2c2a9f);
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 1%;
     margin: 1%;
 }

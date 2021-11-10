@@ -1,14 +1,14 @@
 async function getId(id) {
      try {
-        // return await fetch(`https://moviesmern.herokuapp.com/movies/movie/${id}`)
-        //      .then((response) => response.json())
-        return {data:{
-            _id: id,
-            movieName: `Movie ${id}`,
-            rating: "5",
-            synopsis: `something ${id}`,
-            image: "",
-          }}
+        return await fetch(`https://moviesmern.herokuapp.com/movies/movie/${id}`)
+             .then((response) => response.json())
+        // return {data:{
+        //     _id: id,
+        //     movieName: `Movie ${id}`,
+        //     rating: "5",
+        //     synopsis: `something ${id}`,
+        //     image: "",
+        //   }}
      }
      catch (error) {
          return error

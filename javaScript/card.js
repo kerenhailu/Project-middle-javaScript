@@ -1,54 +1,54 @@
-const listOfMovies = [
-  {
-    _id: "1",
-    movieName: "Movie 1",
-    rating: "5",
-    synopsis: "something",
-    image: "",
-  },
-  {
-    _id: "2",
-    movieName: "Movie 2",
-    rating: "5",
-    synopsis: "something",
-    image: "",
-  },
-  {
-    _id: "3",
-    movieName: "Movie 3",
-    rating: "5",
-    synopsis: "something",
-    image: "",
-  },
-  {
-    _id: "4",
-    movieName: "Movie 4",
-    rating: "5",
-    synopsis: "something",
-    image: "",
-  },
-  {
-    _id: "5",
-    movieName: "Movie 5",
-    rating: "5",
-    synopsis: "something",
-    image: "",
-  },
-  {
-    _id: "6",
-    movieName: "Movie 6",
-    rating: "5",
-    synopsis: "something",
-    image: "",
-  },
-  {
-    _id: "7",
-    movieName: "Movie 7",
-    rating: "5",
-    synopsis: "something",
-    image: "",
-  },
-];
+// const listOfMovies = [
+//   {
+//     _id: "1",
+//     movieName: "Movie 1",
+//     rating: "5",
+//     synopsis: "something",
+//     image: "",
+//   },
+//   {
+//     _id: "2",
+//     movieName: "Movie 2",
+//     rating: "5",
+//     synopsis: "something",
+//     image: "",
+//   },
+//   {
+//     _id: "3",
+//     movieName: "Movie 3",
+//     rating: "5",
+//     synopsis: "something",
+//     image: "",
+//   },
+//   {
+//     _id: "4",
+//     movieName: "Movie 4",
+//     rating: "5",
+//     synopsis: "something",
+//     image: "",
+//   },
+//   {
+//     _id: "5",
+//     movieName: "Movie 5",
+//     rating: "5",
+//     synopsis: "something",
+//     image: "",
+//   },
+//   {
+//     _id: "6",
+//     movieName: "Movie 6",
+//     rating: "5",
+//     synopsis: "something",
+//     image: "",
+//   },
+//   {
+//     _id: "7",
+//     movieName: "Movie 7",
+//     rating: "5",
+//     synopsis: "something",
+//     image: "",
+//   },
+// ];
 
 function printDitelsToCard(object) {
   for (const item of object.data) {
@@ -56,7 +56,6 @@ function printDitelsToCard(object) {
         <a href="../pages/item.html?id=${item._id}" target="_blank"><h3> ${item.movieName}</h3></a>
       <img src="${item.image}"><br>
       rating :${item.rating}<br>
-     <button class="btnCardDetails">Details of movie</button><br>
       <button class="delete" onclick="deleteMovie(${item._id})">Delete</button> 
       </artical>`;
   }
@@ -72,10 +71,10 @@ function haidGif() {
 async function allMovies() {
   try {
     showGif();
-    // return await fetch("https://moviesmern.herokuapp.com/movies/all").then(
-    //   (response) => response.json()
-    // );
-    return {data:listOfMovies}
+    return await fetch("https://moviesmern.herokuapp.com/movies/all").then(
+      (response) => response.json()
+    );
+    // return {data:listOfMovies}
   } catch (error) {
     return error;
   } finally {
@@ -114,12 +113,12 @@ function showMovie(id) {
     }
   }
   CardDetails()
-    .then((res) => movieWithAllTheDetails(res))
+    .then((res) =>console.log(movieWithAllTheDetails(res)) )
     .catch((rej) => console.log(rej));
 }
 
 //!למצוא סרט לפי ID
-btnSearch.onclick = () => {
+btnSearchByInput.onclick = () => {
   showMovie(inputSearch.value);
 };
 

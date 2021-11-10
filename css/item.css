@@ -37,6 +37,23 @@ nav a:hover{
  color: rgb(236, 11, 11);
  font-size: 24px;
 }
+#imgYakov{
+    margin-left: 90%;
+    width: 80px;
+    height: 50px;
+    margin-bottom: -50px;
+    margin-top: -20px;
+    border-radius: 10px;
+    
+    } 
+     #imgTech{
+        margin-right: 90%;
+        width: 80px;
+    height: 50px;
+    margin-top: -10px;
+    border-radius: 10px;
+    }
+    
 #sectionDetailesPageItem{
     padding: 2%;
     margin: 4%;
