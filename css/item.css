@@ -83,3 +83,9 @@ footer a:hover{
    color: rgb(233, 10, 10);
     font-size: 23px;
 }
+.imgContact{
+    margin: 0.5%;
+    width: 45px;
+    height: 45px;
+    transition: 2S;
+}

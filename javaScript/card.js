@@ -95,6 +95,7 @@ function movieWithAllTheDetails(object) {
         linkToMovie :${item.linkToMovie}<br>
         synopsis :${item.synopsis}<br>
         </artical>`;
+        console.log(movieWithAllTheDetails(object));
   }
 }
 
@@ -117,11 +118,31 @@ function showMovie(id) {
     .catch((rej) => console.log(rej));
 }
 
-//!למצוא סרט לפי ID
+// ==============================
+//! למצוא ID
+// inputSearch.oninput = () => {
+//   // if (inputSearch.value.length < 3) sectionDetailesPageItem.innerHTML = " ";
+//   if (inputSearch.value.length > 3) {
+//     searchByName(inputSearch.value).then((res) =>
+//     showMovie(res.data)
+//     );
+//   }
+// };
+// ===================================
+// !למצוא לפי שם
+async function searchByName(inputName) {
+  try {
+      return await fetch(`https://moviesmern.herokuapp.com/movies/movie/searchByName/${inputName}`)
+          .then((res) => res.json());
+  } catch (error) {
+      return error;
+  }
+}
 btnSearchByInput.onclick = () => {
-  showMovie(inputSearch.value);
-};
-
+searchByName(inputSearch.value)
+.then(res=>{})
+console.log(searchByName(inputSearch.value));
+}
 // =======================================================
 //!למחוקקקקקקקקקקקק
 function deleteMovie(id) {

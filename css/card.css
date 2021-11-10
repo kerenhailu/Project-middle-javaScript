@@ -39,7 +39,9 @@ nav a:hover{
   font-size: 24px;
 
 }
-
+#search{
+  text-align: left;
+}
 #imgYakov{
   margin-left: 90%;
   width: 80px;
