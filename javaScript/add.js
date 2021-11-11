@@ -1,4 +1,4 @@
-class MovieFromUser {
+class Movie {
   movieName;
   image;
   linkToMovie;
@@ -23,7 +23,7 @@ async function inputReturn(api, option) {
   }
 }
 btnAdd.onclick = () => {
-  const newMovie = new MovieFromUser(
+  const movie = new Movie(
     movieName.value,
     image.value,
     linkToMovie.value,
@@ -33,7 +33,7 @@ btnAdd.onclick = () => {
 
   const option = {
     method: `POST`,
-    body: JSON.stringify(newMovie),
+    body: JSON.stringify({movie}),
     headers: { "Content-Type": "application/json"},
   };
   console.log(option.body);

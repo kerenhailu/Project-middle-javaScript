@@ -53,7 +53,17 @@ nav a:hover{
     margin-top: -10px;
     border-radius: 10px;
     }
-    
+    img{
+        width: 25vh;
+          height: 40vh;
+          opacity: 0.8;
+          transition: 2s;
+      }
+      img:hover{
+          width: 27vh;
+          height: 42vh;
+          opacity: 0.6; 
+        }
 #sectionDetailesPageItem{
     padding: 2%;
     margin: 4%;
