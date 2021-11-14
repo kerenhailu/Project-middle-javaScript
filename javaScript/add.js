@@ -16,8 +16,6 @@ class Movie {
 async function inputReturn(api, option) {
   try {
     return await fetch(`${api}`, option);
-    // .then((res) => res.json())
-    // .then((res) => console.log(res));
   } catch (err) {
     console.log(err);
   }
